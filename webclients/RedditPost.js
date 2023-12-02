@@ -118,8 +118,12 @@ class RedditPost {
         embed.setAuthor({
             name: `u/${this.userName}`
         })
-        if(!this.content == ''){
+        if(!this.content == '' && this.content.length < 4096){
             embed.setDescription(this.content);
+        } else if(!this.content == '' && this.content.length > 4096){
+          embed.setDescription(`${this.content.substring(0, 3800)}. . . `);
+          embed.addFields(
+            { name: 'To see the rest of this post', value: `[Click Here!](${this.url})` });
         }
         if(this.upvotes){
           embed.addFields({ name: "🔺", value:
