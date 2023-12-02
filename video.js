@@ -18,7 +18,7 @@ module.exports = async function video(message, posts, fallback = false){
 
         }
         console.log("embed url: ", post.embed);
-        console.log("attachment name: ", post.attachment.AttachmentBuilder);
+        //console.log("attachment name: ", post.attachment.AttachmentBuilder);
         if (post.embed.url && post.embed.url.startsWith("https://v.redd.it")) {
                 console.log("adding to delete ", post.attachment.name);
                 await outputFilePathsToDelete.push(post.attachment.name);
