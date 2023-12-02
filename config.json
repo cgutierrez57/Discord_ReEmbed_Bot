@@ -1,0 +1,18 @@
+{
+    "extractor": {
+      "reddit": {
+        "client-id": "YOUR_CLIENT_ID",
+        "user-agent": "Python:YOUR_APPLICATION_NAME:v1.0 (by /u/YOUR_USERNAME)",
+        "refresh-token": "YOUR_REFRESH_TOKEN"
+      }
+    },
+    "downloader": {
+  
+    },
+    "output": {
+  
+    },
+    "postprocessor": {
+  
+    }
+  }
